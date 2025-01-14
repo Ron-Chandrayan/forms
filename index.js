@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const path=require("path");
+const cors=require("cors");
+app.use(cors());
 const mongoose=require("mongoose");
 const Info=require("./models/info.js");
 const { METHODS } = require('http');
