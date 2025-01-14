@@ -2,8 +2,10 @@ const express = require('express');
 const app = express();
 const path=require("path");
 const mongoose=require("mongoose");
-const Info=require("./models/info.js")
+const Info=require("./models/info.js");
+const { METHODS } = require('http');
 const port = 80
+
 
 async function hey(){
     await mongoose.connect("mongodb+srv://chandrayanpaul27:chandrayan%402006@cluster0.7ik3i.mongodb.net/forms");
