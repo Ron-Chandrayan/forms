@@ -51,7 +51,7 @@ const url = `https://forms-haa5.onrender.com/`; // Replace with your Render URL
 const interval = 30000; // Interval in milliseconds (30 seconds)
 
 function reloadWebsite() {
-  axios.get(url)
+  fetch(url)
     .then(response => {
       console.log(`Reloaded at ${new Date().toISOString()}: Status Code ${response.status}`);
     })
