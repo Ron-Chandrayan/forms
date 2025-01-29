@@ -43,7 +43,7 @@ app.post('/',(req,res)=>{
         fewords:req.body.fewords
     });
     info.save();
-    res.status(200).render('index');
+    res.status(200).render('thankyou');
 })
 
 
